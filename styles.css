@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #e94560;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+    border-bottom: 2px solid #e94560;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+}
+
+#hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('football-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    background-color: #e94560;
+    padding: 12px 25px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #d23d52;
+    transform: scale(1.05);
+}
+
+#leagues {
+    padding: 50px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.league-section {
+    flex-basis: 45%;
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.league-section:hover {
+    transform: translateY(-10px);
+}
+
+.league-logo {
+    width: 120px;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.league-section:hover .league-logo {
+    transform: scale(1.1);
+}
+
+.league-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e94560;
+    letter-spacing: 1.2px;
+}
+
+.league-section p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    color: #777;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1b1b1b;
+        z-index: 10;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .league-section {
+        flex-basis: 100%;
+    }
+
+    .league-logo {
+        width: 100px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #e94560;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+    border-bottom: 2px solid #e94560;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+}
+
+.league-page {
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.league-page h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e94560;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.league-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.league-page p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+.league-logo:hover {
+    transform: scale(1.05);
+}
+
+.btn-league {
+    background-color: #e94560;
+    padding: 12px 25px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-league:hover {
+    background-color: #d23d52;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    color: #777;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1b1b1b;
+        z-index: 10;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .league-page h2 {
+        font-size: 32px;
+    }
+
+    .league-logo {
+        width: 100px;
+    }
+}
